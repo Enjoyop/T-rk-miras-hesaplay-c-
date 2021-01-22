@@ -31,12 +31,12 @@ public class Heritage {
 
                     if (ustSoySayisi > 0) {
                         this._shareOfSpouse = _heritage / 2;
-                        kalanMiras = miras = this._shareOfSpouse;
+                        kalanMiras = this._heritage - this._shareOfSpouse;
                         this._shareOfToplineage = kalanMiras / ustSoySayisi;
                     }
 
                     else {
-                        this._shareOfSpouse = _heritage;
+                        this._shareOfSpouse = this._heritage;
                         kalanMiras = 0;
                     }
                 }
