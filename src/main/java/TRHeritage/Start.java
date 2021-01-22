@@ -9,19 +9,19 @@ public class Start {
     public static void main(String[] args) {
 
         Heritage h = new Heritage();
-        Scanner scaner = new Scanner(System.in);
+        Scanner s = new Scanner(System.in);
 
         System.out.println("Miras miktarını giriniz");
-        float a = scaner.nextFloat();
+        float a = s.nextFloat();
 
         System.out.println("Eşi yaşıyormu ?  Evet ise 1 Hayır 0 yazın");
-        byte b = scaner.nextByte();
+        byte b = s.nextByte();
 
         System.out.println("Alt Soy sayısını giriniz");
-        short c = scaner.nextShort();
+        short c = s.nextShort();
 
         System.out.println("Üst Soy sayısını giriniz");
-        short d = scaner.nextShort();
+        short d = s.nextShort();
 
         h.calculate(a, b, c, d);
 
