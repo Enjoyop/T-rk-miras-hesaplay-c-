@@ -29,7 +29,7 @@ public class Start {
         System.out.println("Eşe kalan pay: "+h.getEsHakki());
         System.out.println("Kişi başı alt soy payı: "+h.getAltSoyKakki());
 
-        if (h.getAltSoyKakki() > 0)
+        if (h.getAltSoyHakki() > 0)
         {
             System.out.println("Alt soya miras kaldığı için \nüst soy miras alamaz");
         }
