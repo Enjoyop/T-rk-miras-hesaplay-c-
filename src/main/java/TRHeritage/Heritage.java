@@ -51,17 +51,18 @@ public class Heritage {
                 if (altSoySayisi > 0) {
                     this._shareOfToplineage = 0;
                     this._shareOfSpouse = 0;
-                    this._shareOfSublineage = _heritage / altSoySayisi;
+                    this._shareOfSublineage = this._heritage / altSoySayisi;
                 }
 
                 else if (altSoySayisi == 0 && ustSoySayisi > 0) {
                     this._shareOfSublineage = 0;
-                    this._shareOfSpouse = 0;
+                    this._shareOfSpouse = _heritage / 2;
+                    kalanMiras = this._heritage - this._shareOfSpouse;
                     this._shareOfToplineage = kalanMiras / ustSoySayisi;
                 }
 
                 else {
-                    this._heritage = _shareOfTreasure;
+                    this._heritage = this._shareOfTreasure;
                 }
             }
         }
